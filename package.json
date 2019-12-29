@@ -1,0 +1,24 @@
+{
+  "name": "rademacher.digital",
+  "version": "2.0.0",
+  "description": "Private Blog / Webpage of @wheelmaker24",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "next": "^9.1.6",
+    "postcss-preset-env": "^6.7.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.1",
+    "@types/react": "^16.9.17",
+    "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Nikolaus Rademacher / @wheelmaker24",
+  "license": "ISC"
+}

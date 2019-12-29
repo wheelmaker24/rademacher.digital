@@ -1,0 +1,11 @@
+:root {
+  --test-color: red;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: var(--test-color);
+}
