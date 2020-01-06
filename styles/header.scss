@@ -50,7 +50,7 @@
   .i,
   .profile-pic,
   .profile-pic img {
-    animation-delay: 4s;
+    animation-delay: 2.25s;
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
     animation-fill-mode: both;
@@ -80,6 +80,7 @@
 
   &:hover {
     h1,
+    .i,
     .dot,
     .profile-pic,
     .profile-pic img {
@@ -92,9 +93,7 @@
     }
 
     .i {
-      animation-name: bounce-again;
-      animation-delay: 1s;
-      animation-duration: 2s;
+      animation-name: rotate-i-reverse;
     }
 
     .dot {
@@ -161,12 +160,7 @@
   100% { transform: scale(1, 1) translateY(0) rotate(-2.5deg); }
 }
 
-@keyframes bounce-again {
-  0% { transform: scale(1, 1) translateY(0) rotate(0deg); }
-  10% { transform: scale(1.1, 0.9) translateY(0); }
-  30% { transform: scale(0.9, 1.1) translateY(-0.8em); }
-  50% { transform: scale(1.05, 0.95) translateY(0); }
-  57% { transform: scale(1, 1) translateY(-0.05em); }
-  64% { transform: scale(1, 1) translateY(0); }
-  100% { transform: scale(1, 1) translateY(0); }
+@keyframes rotate-i-reverse {
+  0% { transform: rotate(-2.5deg); }
+  100% { transform: rotate(0deg); }
 }
