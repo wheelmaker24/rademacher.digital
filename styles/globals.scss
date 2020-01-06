@@ -1,13 +1,5 @@
 @import "mixins";
 
-:root {
-  --primary-color: #fcca46;
-  --secondary-color: #fe7f2d;
-  --ternary-color: #233d4d;
-  --font-weight-bold: 900;
-  --font-weight-regular: 400;
-}
-
 html {
   font-size: 16px;
 
@@ -22,10 +14,10 @@ html {
 
 body {
   font-family: 'Exo', sans-serif;
-  font-weight: var(--font-weight-regular);
+  font-weight: map-get($typography, font-weight-regular);
   font-size: 1rem;
   line-height: 1.5em;
-  color: var(--ternary-color);
+  color: map-get($colors, ternary-color);
   margin: 5%;
   @include breakpoint-up(large) {
     max-width: 980px;
@@ -36,14 +28,17 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   max-width: 10em;
-  font-weight: var(--font-weight-bold);
+  font-weight: map-get($typography, font-weight-bold);
   line-height: 1em;
-  color: var(--ternary-color);
+  color: map-get($colors, ternary-color);
 }
 
 h1 { font-size: 3rem; }
 h2 { font-size: 2.4rem; }
-h3 { font-size: 2rem; color: var(--secondary-color); }
+h3 {
+  font-size: 2rem;
+  color: map-get($colors, secondary-color);
+}
 h4 { font-size: 1.6rem; }
 h5 { font-size: 1.4rem; }
 h6 { font-size: 1rem; }
@@ -52,19 +47,20 @@ ul { padding-left: 1em; }
 
 a {
   font-size: 0.85em;
-  color:var(--ternary-color);
-  background-color: var(--primary-color);
+  color: map-get($colors, ternary-color);
+  background-color: map-get($colors, primary-color);
   border-radius: 0.3em;
   padding: 0.15em 0.4em;
   text-decoration: none;
 
   &:hover {
-    background-color: var(--secondary-color);
+    background-color: map-get($colors, secondary-color);
   }
 
   .svg-inline {
     display: inline-block;
     vertical-align: middle;
+    width: 1em;
     height: 0.85em;
     margin-right: 0.35em;
   }

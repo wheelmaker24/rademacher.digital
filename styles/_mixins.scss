@@ -1,3 +1,14 @@
+$colors: (
+  primary-color: #fcca46,
+  secondary-color: #fe7f2d,
+  ternary-color: #233d4d
+);
+
+$typography: (
+  font-weight-bold: 900,
+  font-weight-regular: 400
+);
+
 $breakpoints: (
   small: "min-width: 500px",
   medium: "min-width: 720px",

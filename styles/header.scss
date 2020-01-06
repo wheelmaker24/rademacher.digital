@@ -14,20 +14,20 @@
   h1 {
     transform: rotate(1deg);
     line-height: 0.85em;
-    color: var(--primary-color);
+    color: map-get($colors, primary-color);
     text-align: right;
   }
 
   .i {
     display: inline-block;
     transform: rotate(-2.5deg);
-    color: var(--secondary-color);
+    color: map-get($colors, secondary-color);
   }
 
   .dot {
     display: inline-block;
     transform: rotate(2.5deg);
-    color: var(--ternary-color);
+    color: map-get($colors, ternary-color);
   }
 
   .profile-pic {
