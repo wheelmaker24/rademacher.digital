@@ -27,7 +27,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  max-width: 10em;
+  max-width: 13em;
   font-weight: map-get($typography, font-weight-bold);
   line-height: 1em;
   color: map-get($colors, ternary-color);

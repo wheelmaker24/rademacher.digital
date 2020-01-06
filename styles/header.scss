@@ -21,6 +21,7 @@
   .i {
     display: inline-block;
     transform: rotate(-2.5deg);
+    transition: all 0.3s ease;
     color: map-get($colors, secondary-color);
   }
 
@@ -52,9 +53,27 @@
   }
   
   &:hover {
+    .i {
+      animation-name: bounce-7;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+      transform-origin: bottom;
+    }
+
     .profile-pic, .profile-pic img {
       transform: rotate(0deg);
       transition: all 0.3s ease;
     }
   }
+}
+
+@keyframes bounce-7 {
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-0.8em); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-0.05em); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
 }
