@@ -1,0 +1,7 @@
+@import "mixins";
+
+.site-content {
+  @include breakpoint-up(medium) {
+    width: 80%;
+  }
+}

@@ -1,0 +1,13 @@
+$breakpoints: (
+  small: "min-width: 500px",
+  medium: "min-width: 720px",
+  large: "min-width: 980px",
+  wrapper: "min-width: 1248px"
+);
+
+@mixin breakpoint-up($breakpoint) {
+  $query: map-get($breakpoints, $breakpoint);
+  @media ($query) {
+    @content;
+  }
+}

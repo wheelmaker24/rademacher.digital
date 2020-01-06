@@ -1,0 +1,53 @@
+Arguments: 
+  /Users/n.rademacher/.nvm/versions/node/v12.13.0/bin/node /Users/n.rademacher/.nvm/versions/node/v12.13.0/bin/yarn add @zeit/next-sass node-sass
+
+PATH: 
+  /Users/n.rademacher/.jenv/shims:/Users/n.rademacher/.jenv/bin:/Users/n.rademacher/.nvm/versions/node/v12.13.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  12.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/n.rademacher/Development/Private/rademacher.digital/package.json: Unexpected token } in JSON at position 363
+      at JSON.parse (<anonymous>)
+      at /Users/n.rademacher/.nvm/versions/node/v12.13.0/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/n.rademacher/.nvm/versions/node/v12.13.0/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /Users/n.rademacher/.nvm/versions/node/v12.13.0/lib/node_modules/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "rademacher.digital",
+    "version": "2.0.0",
+    "description": "Private Blog / Webpage of @wheelmaker24",
+    "dependencies": {
+      "next": "^9.1.6",
+      "react": "^16.12.0",
+      "react-dom": "^16.12.0"
+    },
+    "devDependencies": {
+      "typescript": "^3.7.4",
+      "@types/node": "^13.1.1",
+      "@types/react": "^16.9.17",
+      "@zeit/next-css": "^1.0.1",
+    },
+    "scripts": {
+      "dev": "next",
+      "build": "next build",
+      "start": "next start"
+    },
+    "author": "Nikolaus Rademacher / @wheelmaker24",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

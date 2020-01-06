@@ -1,5 +1,9 @@
+import "../styles/footer.scss";
+
 const Footer = () => (
-  <footer>&copy; 2020 Nikolaus Rademacher</footer>
+  <footer className="site-footer">
+    &copy; 2020 Nikolaus Rademacher
+  </footer>
 );
 
 export default Footer;

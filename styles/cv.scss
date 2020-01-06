@@ -1,0 +1,37 @@
+@import "mixins";
+
+.curriculum-vitae {
+  &__job {
+    margin-bottom: 1.5em;
+
+    @include breakpoint-up(medium) {
+      display: flex;
+    }
+
+    dt {
+      flex: 0 0 7em;
+    }
+
+    dd {
+      margin-left: 0;
+    }
+
+    &-company,
+    &-title {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+
+    &-company {
+      font-weight: bold;
+    }
+  
+    &-description {
+      ul {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+
+}
