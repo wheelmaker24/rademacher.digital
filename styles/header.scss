@@ -36,6 +36,7 @@
     height: 200px;
     margin-right: 0;
     transform: rotate(-10deg);
+    transition: all 0.3s ease;
     overflow: hidden;
     border: 0.2em solid white;
     border-radius: 1rem;
@@ -46,6 +47,7 @@
       top: calc(50% - 125px);
       width: 250px;
       transform: rotate(10deg);
+      transition: all 0.3s ease;
     }
   }
   
