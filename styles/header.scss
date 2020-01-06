@@ -43,11 +43,8 @@
       width: 250px;
     }
   }
-}
 
-// Animations
-
-.site-header {
+  // Animations
   h1,
   .dot,
   .i,
@@ -60,7 +57,7 @@
   }
 
   h1 {
-    animation-name: rotate-plus-1;
+    animation-name: rotate-title;
   }
 
   .i {
@@ -74,17 +71,16 @@
   }
 
   .profile-pic {
-    animation-name: rotate-minus-10;
+    animation-name: rotate-profile-pic;
   }
 
   .profile-pic img {
-    animation-name: rotate-plus-10;
+    animation-name: rotate-profile-pic-img;
   }
 
   &:hover {
     h1,
     .dot,
-    .i,
     .profile-pic,
     .profile-pic img {
       animation-delay: 0s;
@@ -92,11 +88,12 @@
     }
 
     h1 {
-      animation-name: rotate-minus-1;
+      animation-name: rotate-title-reverse;
     }
 
     .i {
       animation-name: bounce-again;
+      animation-delay: 1s;
       animation-duration: 2s;
     }
 
@@ -105,131 +102,71 @@
     }
 
     .profile-pic {
-      animation-name: rotate-minus-10-reverse;
+      animation-name: rotate-profile-pic-reverse;
     }
 
     .profile-pic img {
-      animation-name: rotate-plus-10-reverse;
+      animation-name: rotate-profile-pic-img-reverse;
     }
   }
 }
 
-@keyframes rotate-plus-1 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(1deg);
-  }
+@keyframes rotate-title {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(1deg); }
 }
 
-@keyframes rotate-minus-1 {
-  0% {
-    transform: rotate(1deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+@keyframes rotate-title-reverse {
+  0% { transform: rotate(1deg); }
+  100% { transform: rotate(0deg); }
 }
 
 @keyframes rotate-dot {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(2.5deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(2.5deg); }
 }
 
 @keyframes rotate-dot-reverse {
-  0% {
-    transform: rotate(2.5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+  0% { transform: rotate(2.5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes rotate-profile-pic {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-10deg); }
+}
+
+@keyframes rotate-profile-pic-reverse {
+  0% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes rotate-profile-pic-img {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(10deg); }
+}
+
+@keyframes rotate-profile-pic-img-reverse {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
 }
 
 @keyframes bounce {
-  0% {
-    transform: scale(1, 1) translateY(0) rotate(0deg);
-  }
-  10% {
-    transform: scale(1.1, 0.9) translateY(0);
-  }
-  30% {
-    transform: scale(0.9, 1.1) translateY(-0.8em);
-  }
-  50% {
-    transform: scale(1.05, 0.95) translateY(0);
-  }
-  57% {
-    transform: scale(1, 1) translateY(-0.05em);
-  }
-  64% {
-    transform: scale(1, 1) translateY(0);
-  }
-  100% {
-    transform: scale(1, 1) translateY(0) rotate(-2.5deg);
-  }
+  0% { transform: scale(1, 1) translateY(0) rotate(0deg); }
+  10% { transform: scale(1.1, 0.9) translateY(0); }
+  30% { transform: scale(0.9, 1.1) translateY(-0.8em); }
+  50% { transform: scale(1.05, 0.95) translateY(0); }
+  57% { transform: scale(1, 1) translateY(-0.05em); }
+  64% { transform: scale(1, 1) translateY(0); }
+  100% { transform: scale(1, 1) translateY(0) rotate(-2.5deg); }
 }
 
 @keyframes bounce-again {
-  0% {
-    transform: scale(1, 1) translateY(0) rotate(0deg);
-  }
-  10% {
-    transform: scale(1.1, 0.9) translateY(0);
-  }
-  30% {
-    transform: scale(0.9, 1.1) translateY(-0.8em);
-  }
-  50% {
-    transform: scale(1.05, 0.95) translateY(0);
-  }
-  57% {
-    transform: scale(1, 1) translateY(-0.05em);
-  }
-  64% {
-    transform: scale(1, 1) translateY(0);
-  }
-  100% {
-    transform: scale(1, 1) translateY(0);
-  }
-}
-
-@keyframes rotate-minus-10 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-10deg);
-  }
-}
-
-@keyframes rotate-minus-10-reverse {
-  0% {
-    transform: rotate(-10deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes rotate-plus-10 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(10deg);
-  }
-}
-
-@keyframes rotate-plus-10-reverse {
-  0% {
-    transform: rotate(10deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+  0% { transform: scale(1, 1) translateY(0) rotate(0deg); }
+  10% { transform: scale(1.1, 0.9) translateY(0); }
+  30% { transform: scale(0.9, 1.1) translateY(-0.8em); }
+  50% { transform: scale(1.05, 0.95) translateY(0); }
+  57% { transform: scale(1, 1) translateY(-0.05em); }
+  64% { transform: scale(1, 1) translateY(0); }
+  100% { transform: scale(1, 1) translateY(0); }
 }
