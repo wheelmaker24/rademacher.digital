@@ -1,3 +1,4 @@
+import "babel-polyfill";
 import Typist from "react-typist";
 import Layout from "../components/layout";
 import CurriculumVitae, { Job } from "../components/cv";
@@ -41,12 +42,12 @@ const HomePage = () => (
             client
           </li>
           <li>
-            soft-launch of a new frontend for an international multi-siteCMS
+            soft-launch of a new frontend for an international multi-site CMS
             with over 1.600 sites
           </li>
           <li>agile development process (Scrum)</li>
         </ul>
-        <Tags items={["HTML", "CSS", "JavaScript", "TypeScript", "React"]} />
+        <Tags items={["HTML", "CSS", "JavaScript", "TypeScript", "React", "Design Systems", "Living Style Guides", "Pattern Libraries", "Responsive Webdesign", "Accessibility", "SEO"]} />
       </Job>
       <Job
         company="Accenture Dienstleistungen GmbH, Kronberg, Germany"

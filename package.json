@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "Private Blog / Webpage of @wheelmaker24",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "next": "^9.1.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

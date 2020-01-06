@@ -12,7 +12,6 @@
   }
 
   h1 {
-    transform: rotate(1deg);
     line-height: 0.85em;
     color: map-get($colors, primary-color);
     text-align: right;
@@ -20,14 +19,11 @@
 
   .i {
     display: inline-block;
-    transform: rotate(-2.5deg);
-    transition: all 0.3s ease;
     color: map-get($colors, secondary-color);
   }
 
   .dot {
     display: inline-block;
-    transform: rotate(2.5deg);
     color: map-get($colors, ternary-color);
   }
 
@@ -36,8 +32,6 @@
     width: 200px;
     height: 200px;
     margin-right: 0;
-    transform: rotate(-10deg);
-    transition: all 0.3s ease;
     overflow: hidden;
     border: 0.2em solid white;
     border-radius: 1rem;
@@ -47,33 +41,195 @@
       left: calc(50% - 125px);
       top: calc(50% - 125px);
       width: 250px;
-      transform: rotate(10deg);
-      transition: all 0.3s ease;
-    }
-  }
-  
-  &:hover {
-    .i {
-      animation-name: bounce-7;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
-      transform-origin: bottom;
-    }
-
-    .profile-pic, .profile-pic img {
-      transform: rotate(0deg);
-      transition: all 0.3s ease;
     }
   }
 }
 
-@keyframes bounce-7 {
-  0%   { transform: scale(1,1)      translateY(0); }
-  10%  { transform: scale(1.1,.9)   translateY(0); }
-  30%  { transform: scale(.9,1.1)   translateY(-0.8em); }
-  50%  { transform: scale(1.05,.95) translateY(0); }
-  57%  { transform: scale(1,1)      translateY(-0.05em); }
-  64%  { transform: scale(1,1)      translateY(0); }
-  100% { transform: scale(1,1)      translateY(0); }
+// Animations
+
+.site-header {
+  h1,
+  .dot,
+  .i,
+  .profile-pic,
+  .profile-pic img {
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+    animation-fill-mode: both;
+  }
+
+  h1 {
+    animation-name: rotate-plus-1;
+  }
+
+  .i {
+    animation-name: bounce;
+    animation-iteration-count: 1;
+    transform-origin: bottom;
+  }
+
+  .dot {
+    animation-name: rotate-dot;
+  }
+
+  .profile-pic {
+    animation-name: rotate-minus-10;
+  }
+
+  .profile-pic img {
+    animation-name: rotate-plus-10;
+  }
+
+  &:hover {
+    h1,
+    .dot,
+    .i,
+    .profile-pic,
+    .profile-pic img {
+      animation-delay: 0s;
+      animation-duration: 1s;
+    }
+
+    h1 {
+      animation-name: rotate-minus-1;
+    }
+
+    .i {
+      animation-name: bounce-again;
+      animation-duration: 2s;
+    }
+
+    .dot {
+      animation-name: rotate-dot-reverse;
+    }
+
+    .profile-pic {
+      animation-name: rotate-minus-10-reverse;
+    }
+
+    .profile-pic img {
+      animation-name: rotate-plus-10-reverse;
+    }
+  }
+}
+
+@keyframes rotate-plus-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes rotate-minus-1 {
+  0% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate-dot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(2.5deg);
+  }
+}
+
+@keyframes rotate-dot-reverse {
+  0% {
+    transform: rotate(2.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0) rotate(0deg);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-0.8em);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-0.05em);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0) rotate(-2.5deg);
+  }
+}
+
+@keyframes bounce-again {
+  0% {
+    transform: scale(1, 1) translateY(0) rotate(0deg);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-0.8em);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-0.05em);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+@keyframes rotate-minus-10 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes rotate-minus-10-reverse {
+  0% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate-plus-10 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes rotate-plus-10-reverse {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
