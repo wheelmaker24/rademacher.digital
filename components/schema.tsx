@@ -10,7 +10,7 @@ const SchemaData = () => {
       streetAddress: "Gneisenaustr. 21"
     },
     email: "mail@rademacher.digital",
-    // "image": "nikolaus_rademacher.png",
+    "image": "/nikolaus_rademacher.png",
     jobTitle: "Senior Frontend Web Developer",
     name: "Nikolaus Rademacher",
     url: "http://www.rademacher.digital",
