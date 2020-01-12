@@ -43,7 +43,7 @@ const HomePage = () => (
           </li>
           <li>
             soft-launch of a new frontend for an international multi-site CMS
-            with over 1.600 sites
+            with over 1.700 sites
           </li>
           <li>agile development process (Scrum)</li>
         </ul>
@@ -160,7 +160,6 @@ const HomePage = () => (
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
-            data-fa-i2svg=""
           >
             <path
               fill="currentColor"
@@ -183,7 +182,6 @@ const HomePage = () => (
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
-            data-fa-i2svg=""
           >
             <path
               fill="currentColor"
@@ -206,7 +204,6 @@ const HomePage = () => (
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 384 512"
-            data-fa-i2svg=""
           >
             <path
               fill="currentColor"
@@ -226,7 +223,6 @@ const HomePage = () => (
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 496 512"
-            data-fa-i2svg=""
           >
             <path
               fill="currentColor"
