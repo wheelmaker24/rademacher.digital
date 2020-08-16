@@ -12,10 +12,20 @@ const Job = ({ company, title, time, children = null }) => (
     <dd>
       <p className="curriculum-vitae__job-company">{company}</p>
       <p className="curriculum-vitae__job-title">{title}</p>
-      {children && <div className="curriculum-vitae__job-description">{children}</div>}
+      {children && (
+        <div className="curriculum-vitae__job-description">{children}</div>
+      )}
     </dd>
   </div>
 );
 
+const WorkList = ({ items }) => (
+  <ul>
+    {items.map((item) => (
+      <li key={item}>{item}</li>
+    ))}
+  </ul>
+);
+
 export default CurriculumVitae;
-export { Job };
+export { Job, WorkList };

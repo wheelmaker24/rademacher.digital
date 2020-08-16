@@ -3,7 +3,7 @@ import "../styles/tags.scss";
 const Tags = ({ items }) => (
   <ul className="tag-list">
     {items.map(item => (
-      <li>{item}</li>
+      <li key={item}>{item}</li>
     ))}
   </ul>
 );
