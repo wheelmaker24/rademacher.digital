@@ -1,7 +1,7 @@
-import "../styles/footer.scss";
+import styles from "./footer.module.scss";
 
 const Footer = () => (
-  <footer className="site-footer">
+  <footer className={styles.siteFooter}>
     <p>
       <strong>Impressum</strong>
       <br />

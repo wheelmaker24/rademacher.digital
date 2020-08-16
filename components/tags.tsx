@@ -1,7 +1,7 @@
-import "../styles/tags.scss";
+import styles from "./tags.module.scss";
 
 const Tags = ({ items }) => (
-  <ul className="tag-list">
+  <ul className={styles.tagList}>
     {items.map(item => (
       <li key={item}>{item}</li>
     ))}

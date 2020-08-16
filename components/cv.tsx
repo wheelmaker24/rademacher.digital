@@ -1,19 +1,19 @@
-import "../styles/cv.scss";
+import styles from "./cv.module.scss";
 
 const CurriculumVitae = ({ children }) => (
-  <dl className="curriculum-vitae">{children}</dl>
+  <dl>{children}</dl>
 );
 
 const Job = ({ company, title, time, children = null }) => (
-  <div className="curriculum-vitae__job">
+  <div className={styles.job}>
     <dt>
       <time>{time}</time>
     </dt>
     <dd>
-      <p className="curriculum-vitae__job-company">{company}</p>
-      <p className="curriculum-vitae__job-title">{title}</p>
+      <p className={styles.company}>{company}</p>
+      <p className={styles.jobTitle}>{title}</p>
       {children && (
-        <div className="curriculum-vitae__job-description">{children}</div>
+        <div className={styles.jobDescription}>{children}</div>
       )}
     </dd>
   </div>

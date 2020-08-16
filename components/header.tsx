@@ -1,14 +1,14 @@
-import "../styles/header.scss";
+import styles from "./header.module.scss";
 
 const Header = () => (
-  <header className="site-header">
+  <header className={styles.siteHeader}>
     <h1 title="rademacher.digital – Nikolaus Rademacher, Frontend Web Developer">
       rademacher
       <br />
-      <span className="dot">.</span>
-      d<span className="i">i</span>gital
+      <span className={styles.dot}>.</span>
+      d<span className={styles.i}>i</span>gital
     </h1>
-    <figure className="profile-pic">
+    <figure className={styles.profilePic}>
       <img src="/nikolaus_rademacher.png" alt="Nikolaus Rademacher (Photo), Frontend Web Developer" />
     </figure>
   </header>

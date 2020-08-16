@@ -1,0 +1,34 @@
+@import "../styles/mixins";
+
+.job {
+  margin-bottom: 1.5em;
+
+  @include breakpoint-up(medium) {
+    display: flex;
+  }
+
+  dt {
+    flex: 0 0 8em;
+  }
+
+  dd {
+    margin-left: 0;
+  }
+
+  .company,
+  .job-title {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .company {
+    font-weight: bold;
+  }
+
+  .job-description {
+    ul {
+      margin-bottom: 0.5em;
+    }
+  }
+}
