@@ -10,12 +10,12 @@
   @include breakpoint-up(medium) {
     flex-direction: row;
   }
+}
 
-  h1 {
-    line-height: 0.85em;
-    color: map-get($colors, primary-color);
-    text-align: right;
-  }
+h1 {
+  line-height: 0.85em;
+  color: map-get($colors, primary-color);
+  text-align: right;
 }
 
 .i {
@@ -46,7 +46,7 @@
 }
 
 // Animations
-.site-header h1,
+h1,
 .dot,
 .i,
 .profile-pic,
@@ -57,7 +57,7 @@
   animation-fill-mode: both;
 }
 
-.site-header h1 {
+h1 {
   animation-name: rotate-title;
 }
 
