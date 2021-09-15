@@ -20,7 +20,7 @@ const HomePage = () => (
     </Typist>
     <p>
       As a child I was interested in complex traffic infrastructures. Airports,
-      radial highways and big interjunctions need to handle daily traffic,
+      radial highways and big intersections need to handle daily traffic,
       quickly guiding each person to their destination. Today I choose to build
       digital junctions.
     </p>
