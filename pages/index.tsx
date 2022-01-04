@@ -28,7 +28,7 @@ const HomePage = () => (
     <h3>/connect</h3>
     <ul>
       <li>
-        <a href="https://twitter.com/wheelmaker24" target="_blank">
+        <a href="https://dev.to/wheelmaker24" target="_blank">
           dev.to/wheelmaker24
         </a> - find my most current blog posts on dev.to
       </li>
