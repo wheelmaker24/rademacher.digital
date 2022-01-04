@@ -25,6 +25,45 @@ const HomePage = () => (
       digital junctions.
     </p>
 
+    <h3>/connect</h3>
+    <ul>
+      <li>
+        <a href="https://twitter.com/wheelmaker24" target="_blank">
+          dev.to/wheelmaker24
+        </a> - find my most current blog posts on dev.to
+      </li>
+      <li>
+        <a href="https://twitter.com/wheelmaker24" target="_blank">
+          <Icon.Twitter />
+          @wheelmaker24
+        </a> - hot picks, findings and retweets around web development
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/nikolaus-rademacher"
+          target="_blank"
+        >
+          <Icon.LinkedIn />
+          nikolaus-rademacher
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.xing.com/profile/Nikolaus_Rademacher"
+          target="_blank"
+        >
+          <Icon.Xing />
+          Nikolaus_Rademacher
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/wheelmaker24" target="_blank">
+          <Icon.GitHub />
+          wheelmaker24
+        </a>
+      </li>
+    </ul>
+    
     <h3>/cv</h3>
     <CurriculumVitae>
       <Job
@@ -165,40 +204,6 @@ const HomePage = () => (
         <Tags items={["PHP", "MySQL", "phpBB", "HTML", "CSS"]} />
       </Job>
     </CurriculumVitae>
-
-    <h3>/connect</h3>
-    <ul>
-      <li>
-        <a href="https://twitter.com/wheelmaker24" target="_blank">
-          <Icon.Twitter />
-          @wheelmaker24
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.linkedin.com/in/nikolaus-rademacher"
-          target="_blank"
-        >
-          <Icon.LinkedIn />
-          nikolaus-rademacher
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.xing.com/profile/Nikolaus_Rademacher"
-          target="_blank"
-        >
-          <Icon.Xing />
-          Nikolaus_Rademacher
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/wheelmaker24" target="_blank">
-          <Icon.GitHub />
-          wheelmaker24
-        </a>
-      </li>
-    </ul>
   </Layout>
 );
 
