@@ -67,8 +67,8 @@ const HomePage = () => (
     <h3>/cv</h3>
     <CurriculumVitae>
       <Job
-        company="SinnerSchrader Deutschland GmbH / Accenture Interactive"
-        title="Senior Product Engineer"
+        company="Accenture Song"
+        title="Product Engineering Associate Manager"
         time="since 01/2022"
       />
       <Job
