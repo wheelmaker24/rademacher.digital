@@ -10,9 +10,9 @@ const Footer = () => (
     <address>
       Nikolaus Rademacher
       <br />
-      Grunerstr. 26
+      Oberkasseler Str. 85
       <br />
-      40239 Düsseldorf{" "}
+      40545 Düsseldorf{" "}
     </address>
     <p>
       <strong>Vertreten durch: </strong>
@@ -26,7 +26,7 @@ const Footer = () => (
       <br />
       E-Mail: mail@rademacher.digital
     </p>
-    &copy; 2020 Nikolaus Rademacher
+    &copy; 2022 Nikolaus Rademacher
   </footer>
 );
 
