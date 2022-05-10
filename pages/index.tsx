@@ -67,7 +67,7 @@ const HomePage = () => (
     <h3>/cv</h3>
     <CurriculumVitae>
       <Job
-        company="Accenture Song"
+        company="Accenture Song, Düsseldorf, Germany (remote)"
         title="Product Engineering Associate Manager"
         time="since 01/2022"
       />
