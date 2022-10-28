@@ -62,6 +62,9 @@ const HomePage = () => (
           wheelmaker24
         </a>
       </li>
+      <li>
+        <a rel="me" href="https://mastodon.social/@wheelmaker24">Mastodon</a>
+      </li>
     </ul>
     
     <h3>/cv</h3>
