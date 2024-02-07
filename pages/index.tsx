@@ -13,9 +13,9 @@ const HomePage = () => (
       }}
     >
       <h2>
-        Hi, I'm a frontend
+        Hi, I'm creating websites
         <Typist.Backspace count={8} delay={200} />
-        senior frontend web developer.
+        digital products for more than 15 years.
       </h2>
     </Typist>
     <p>
@@ -70,9 +70,14 @@ const HomePage = () => (
     <h3>/cv</h3>
     <CurriculumVitae>
       <Job
+        company="denkwerk GmbH, Köln"
+        title="Associate Technical Director"
+        time="since 12/2023"
+      />
+      <Job
         company="Accenture Song, Düsseldorf, Germany (remote)"
         title="Product Engineering Associate Manager"
-        time="since 01/2022"
+        time="01/2022 - 11/2023"
       />
       <Job
         company="sipgate GmbH, Düsseldorf, Germany"
